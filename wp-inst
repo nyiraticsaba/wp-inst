@@ -1,0 +1,10 @@
+#! /bin/bash
+cd ~
+mkdir wordpress-ansible && cd wordpress-ansible
+touch playbook.yml
+touch hosts
+mkdir roles && cd roles
+ansible-galaxy init server 
+ansible-galaxy init php 
+ansible-galaxy init mysql
+ansible-galaxy init wordpress
